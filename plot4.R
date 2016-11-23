@@ -29,5 +29,7 @@ legend("topright",col = c("black", "red", "blue"), legend = c( "Sub_metering_1",
 
 #plot4
 globreact<-as.numeric(eleright$Global_reactive_power)
-plot(datetime,globreact, type = 'l',xlab= "datetime", ylab="Global_reactive_power"
-)
+plot(datetime,globreact, type = 'l',xlab= "datetime", ylab="Global_reactive_power")
+
+dev.copy(png, 'plot4.png',width=480, height=480)
+dev.off()
